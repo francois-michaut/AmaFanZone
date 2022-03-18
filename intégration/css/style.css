@@ -174,3 +174,8 @@ footer p
 {
     margin-top: 60px;
 }
+article .col-3, article .col-1
+{
+  margin-top: auto;
+  margin-bottom: auto;
+}
