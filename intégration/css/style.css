@@ -36,7 +36,6 @@ nav li
 {
     width: 10%;
     background-color: darkorchid;
-    color: white;
     margin-top:20px;
     margin-left: 200px;
     height: 10%;
@@ -96,21 +95,41 @@ footer ul
 {
     list-style: none;
 }
+.btn 
+{
+    color: white;
+}
 .animal
 {
-    background-color: beige;
+    background-color: purple;
 }
 .bijoux
 {
-    background-color: chartreuse;
+    background-color: darkred;
 }
 .santé
 {
-    background-color: goldenrod;
+    background-color: darkblue;
 }
 .mode
 {
     background-color: green;
+}
+.sport
+{
+    background-color: tomato;
+}
+.politique
+{
+    background-color: turquoise;
+}
+.arts
+{
+    background-color: rgb(25, 153, 8);
+}
+.legende
+{
+    background-color: yellowgreen;
 }
 .col-3
 {
@@ -133,4 +152,25 @@ footer p
     text-align: center;
     font-family:'Lobster', cursive ;
     font-size: 32px;
+}
+.category
+{
+    width: 100px;
+    height: 100px;
+    border: 0 solid burlywood;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 16px;
+    text-align: center;
+}
+.category  a
+{
+    color: white;
+    vertical-align: middle;
+
+}
+.section-category
+{
+    margin-top: 60px;
 }
