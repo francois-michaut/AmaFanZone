@@ -1,0 +1,136 @@
+body
+{
+    font-family:'Merriweather Sans', sans-serif ;
+}
+header, ul
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+.logo img
+{
+    width: 50%;
+    border: 2px solid darkgray;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+nav
+{
+    width: 50%;
+}
+nav ul
+{
+    list-style: none;
+    margin-top: 20px;
+    border: 2px solid darkgray;
+    border-radius: 40px;
+}
+nav li
+{
+    margin: 20px;
+}
+
+.connect-button
+{
+    width: 10%;
+    background-color: darkorchid;
+    color: white;
+    margin-top:20px;
+    margin-left: 200px;
+    height: 10%;
+    
+}
+.cart
+{
+    width: 20%;
+    margin-left: 350px;
+    margin-top: 20px;
+} 
+h1
+{
+    font-size: 2vw;
+    text-align: center;
+    color: darkslateblue;
+    font-family: 'Hurricane', cursive;
+    font-size: 60px;
+} 
+.row
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    background-color: burlywood;
+    margin-top: 20px;
+    padding: 20px;
+}
+h2
+{
+    color: darkslateblue;
+    margin-bottom: 20px;
+    font-family: 'Hurricane', cursive;
+    font-size: 40px;
+}
+article img, article p
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+}
+footer
+{
+    background-color: darkslategrey;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+footer ul
+{
+    list-style: none;
+}
+.animal
+{
+    background-color: beige;
+}
+.bijoux
+{
+    background-color: chartreuse;
+}
+.santé
+{
+    background-color: goldenrod;
+}
+.mode
+{
+    background-color: green;
+}
+.col-3
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.col-3 button
+{
+    width: 50%;
+    margin: auto;
+}
+.col-3 img, .col-3 p
+{
+    height: 40%;
+}
+footer p
+{
+    color: white;
+    text-align: center;
+    font-family:'Lobster', cursive ;
+    font-size: 32px;
+}
