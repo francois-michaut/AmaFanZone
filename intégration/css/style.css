@@ -179,3 +179,29 @@ article .col-3, article .col-1
   margin-top: auto;
   margin-bottom: auto;
 }
+main .news
+{
+    background-color: yellowgreen;
+}
+.card
+{
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.card a
+{
+    color: red;
+    background-color: thistle;
+    margin-top: 16px;
+
+}
+.card img
+{
+    height: 50%;
+    margin-top: 16px;
+    
+}
