@@ -1,17 +1,44 @@
-// const app = {
-//     init: function()
-//     {
-//         const signInButton = document.querySelector( '.connect-button' );
+const app = {
 
-//         signInButton.addEventListener( 'click' , app.handleConnectionButton );
-//     },
+     apiRootUrl: "http://localhost:8080",
 
-//     handleConnectionButton: function()
-//     {
-//         alert( 'nouvelle pop-up!' );
-//     }
-// }
+    init: function() 
+    {
+        console.log( 'app.init' );
 
+        app.loadCategories();
+    },
 
-// document.addEventListener( "DOMContentLoaded", app.init );
+    loadCategories: function()
+    {
+        const fetchOptions = {
+            method : 'GET',
+            mode   : 'cors',
+            cache  : 'no-cache'
+        };
+
+        fetch( app.apiRootUrl , fetchOptions )
+        .then( function( response ) { return response.json() ;
+                }
+         )
+        .then( function (response ){
+
+            console.log( response );
+        //    const categories =  response;
+
+        //    for( const category of categories )
+        //    {
+        //        const newDiv = document.createElement( 'div' );
+
+        //        newDiv.textContent = category.name;
+
+        //        const titlePrincipal = document.querySelector( 'h1' );
+
+        //        titlePrincipal.append( newDiv );
+        //    }
+        } )
+    }
+}
+
+document.addEventListener( 'DOMContentLoaded', app.init );
 

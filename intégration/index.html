@@ -15,49 +15,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comforter&family=Hurricane&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="container-fluid">
-    <header class="container-fluid">
-        <div class="logo">
-            <a href="./index.html">
-                <img src="../docs/logo-panier-achat-ligne-conception-panier-achat_460848-10303.webp" alt="logo du site">
-            </a>
+<body >
+    <header class="container-fluid" id="header">
+        <div class="row">
+            <div class="logo col-4">
+                <a href="./index.html">
+                    <img class="img-fluid rounded-circle" src="../docs/logo-panier-achat-ligne-conception-panier-achat_460848-10303.webp" alt="logo du site">
+                </a>
+            </div>
+            <div class="dropdown d-lg-none col-4 pt-2">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="./index.html">Accueil</a></li>
+                  <li><a class="dropdown-item" href="./category.html">Catégories</a></li>
+                  <li><a class="dropdown-item" href="./bestof.html">Meilleures ventes</a></li>
+                  <li><a class="dropdown-item" href="./nouveautes.html">Nouveautés</a></li>
+                </ul>
+            </div>
+            <div class="col-4  d-none d-lg-block">
+    ²            <nav class="navbar navbar-expand-md"> 
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Accueil</a>
+                        <a class="navbar-brand" href="./category.html">Catégories</a>
+                        <a class="navbar-brand" href="./bestof.html">Meilleures ventes</a>
+                        <a class="navbar-brand" href="./nouveautes.html">Nouveautés</a>
+                    </div>            
+                </nav>
+            </div>
+           
+            <div class="col-4 connect-cart pr-0">
+                <button class="btn connect-button"><a href="./form.html">Sign in</a></button>
+                <a href="" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewbox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                      </svg>
+                </a>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="./category.html">Catégories</a></li>
-                <li><a href="./bestof.html">Meilleures ventes</a></li>
-                <li><a href="./nouveautes.html">Nouveautés</a></li>
-            </ul>
-        </nav>
-        <button class="btn connect-button"><a href="./form.html">Sign in</a></button>
-        <a href="">
-            <img class="cart" src="../docs/petit-panier.png" alt="panier">
-        </a>
+        
+       
     </header>
 
     <main class="container-fluid">
-        <h1>AmaFanZone</h1>
+        <h1 class="text-center">AmaFanZone</h1>
         <section class="row">
             <h2 class="col-12">
                 Nos dernières nouveautés:
             </h2>
-            <article class="col-4">
+            <article class="col-12 text-center">
                 <p>
                    Retrouvez en exclusivité un des morceaux de boeuf ayant servi à la confection de la robe de Lady Gaga lors des MTV Awards 2010.
                 </p>
                 <img src="../docs/Morceau-de-viande.jpg" alt="morceau de viande">
             </article>
-            <article class="col-4">
+            <article class="col-12 text-center">
                 <p>
                    Vous n'en croirez pas vos yeux!!
                    Voici le pansement que Matterasi a du appliquer sur son plexus après avoir reçu le fameux coup de boule de Zidane.
                 </p>
                 <img src="../docs/pansement-usagé.jpg" alt="pansement usagé">
             </article>
-            <article class="col-4">
+            <article class="col-12 text-center">
                 <p>
                     Admirez ce superbe clou!
                     En provenance directe de nos émissaires à l'autre  bout du monde, voici le clou qui a servi à ferrer le sabot du cheval de Troie.
@@ -69,47 +93,47 @@
             <h2 class="col-12">
                 Meilleures ventes:
             </h2>
-            <article class="col-3">
+            <article class="col-12 text-center">
                 <img src="../docs/anneau-spécial.png" alt="anneau de la terre du milieu">
                 <p>
                     Le célèbre Anneau de la terre du milieu
                 </p>
-                <button class="btn bijoux">
+                <button class="btn bijoux text-light">
                     Bijoux
                 </button>
             </article>
-            <article class="col-3">
+            <article class="col-12 text-center">
                 <img src="../docs/cheval-noir.jpeg" alt="étalon noir">
                 <p>
                     L' étalon noir!!
                 </p>
-                <button class="btn animal">
+                <button class="btn animal text-light">
                     Animaux
                 </button>
             </article>
-            <article class="col-3">
+            <article class="col-12 text-center">
                 <img src="../docs/sperme-en-flacon.png" alt="sperme de Mary">
                 <p>
                     Le sperme qui a servi à Mary pour sa célèbre coiffure, profitez-en vite, il n'en reste plus beaucoup.
                 </p>
-                <button class="btn santé">
+                <button class="btn santé text-light">
                     Santé
                 </button>
             </article>
-            <article class="col-3">
+            <article class="col-12 text-center">
                 <img src="../docs/kilt.jpg" alt="kilt de higlander">
                 <p>
                     Kilt porté par Christophe Lambert dans Highlander , puis par Mel Gibson dans BraveHeart. Pas encore lavé, précipitez-vous!
                 </p>
-                <button class="btn mode">
+                <button class="btn mode text-light">
                     Mode
                 </button>
             </article>
         </section>
     </main>
 
-    <footer>
-        <ul>
+    <footer class="row">
+        <ul class="text-center col-12">
             <li>
                 <a href="#">
                     Contact
@@ -126,10 +150,11 @@
                 </a>
             </li>
         </ul>
-        <p>
+        <p class="text-center col-12 text-light">
             A très vite !!
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
 </body>
 </html>
